@@ -1,0 +1,52 @@
+.TransactionTable {
+    border: 1px solid #1d1d1d;
+
+    .TransactionTable-options {
+        padding: 1rem;
+        background-color: #36373A;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        button {
+            border: none;
+            background: none;
+            color: #40B681;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    .TransactionTable-header, .TransactionTable-content > div {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 3fr 2fr;
+        text-align: center;
+
+        div:nth-child(2) {
+            text-align: left;
+        }
+        div:last-child {
+            text-align: right;
+        }
+    }
+
+    .TransactionTable-header {
+        padding: 0.5rem;
+        background-color: #050607;
+    }
+
+    .TransactionTable-content > div {
+        padding: 1rem 0.5rem;
+        font-size: 0.9em;   
+
+        &:not(:last-child) {
+            border-block-end: 1px solid #1d1d1d;
+        }
+    }
+}

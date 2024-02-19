@@ -1,0 +1,46 @@
+.Detail {
+    background-color: #050607;
+    padding: 1rem;
+
+    header {
+        font-size: 2rem;
+    }
+
+    .Detail-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-block-end: 1rem;
+        margin-block: 2rem;
+        
+        .Detail-title {
+            font-size: 1.25rem;
+        }
+        
+        .Detail-vendor {
+            font-size: 0.85rem;
+        }
+        
+        .Detail-price {
+            font-size: 2rem;
+        }
+    }
+
+    .Detail-category {
+        border-radius: 20px;
+        padding: 0.25rem 0.75rem;
+        background-color: #36373A;
+        width: fit-content;
+        font-size: 0.85em;
+        margin-inline-start: auto;
+    }
+
+    .Detail-note {
+        width: 100%;
+        background: none;
+        border: 1px solid #36373A;
+        resize: none;
+        padding: 0.5rem;
+    }
+
+}
